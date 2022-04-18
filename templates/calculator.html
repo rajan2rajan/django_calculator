@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <form method="post">
+        {% csrf_token %} value 1 = <input type="text" name="value1"> <br>
+        <select name="oper">
+            <option >+</option>
+            <option >-</option>
+            <option >*</option>
+            <option >/</option>
+    
+        </select> <br> value 2 = <input type="text" name="value2"> <br>
+        <button type="submit">calculate</button> <br> <br> output=
+        <input type="text" value={{c}}>
+    </form>
+</body>
+
+</html>
